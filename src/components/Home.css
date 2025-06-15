@@ -1,0 +1,149 @@
+/* ✅ Home.css - Adjusted for less space below */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px); /* Reduced height to prevent extra bottom space */
+  padding: 40px 20px 20px; /* Reduced bottom padding */
+  background-color: #f9f9f9;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+
+.text {
+  flex: 1;
+  animation: slideInRight 1.2s ease-in-out;
+}
+
+.greeting {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.greeting span {
+  color: blueviolet;
+}
+
+.role {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #6a0dad;
+}
+
+.download-icon {
+  margin-right: 8px;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .greeting {
+    font-size: 2.2rem;
+  }
+  .role {
+    font-size: 1.3rem;
+  }
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-container {
+    margin-bottom: 20px;
+  }
+
+  .download-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting {
+    font-size: 1.8rem;
+  }
+  .role {
+    font-size: 1rem;
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
