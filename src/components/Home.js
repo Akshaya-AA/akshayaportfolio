@@ -17,11 +17,10 @@ function Home() {
         <div className="text">
           <h1 className="greeting">Hi, I'm <span>Akshaya</span></h1>
           <p className="role">Full Stack Developer - MERN</p>
-          <a
-            href="/Akshaya_Resume.pdf" download className="download-btn">
-            <FaDownload className="download-icon" />
-            Download CV
-          </a>
+          <a href="/Akshaya_Resume.pdf" download className="download-btn">
+  <FaDownload className="download-icon" />
+  Download CV
+</a>
         </div>
       </div>
     </section>
