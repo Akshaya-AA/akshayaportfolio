@@ -17,10 +17,17 @@ function Home() {
         <div className="text">
           <h1 className="greeting">Hi, I'm <span>Akshaya</span></h1>
           <p className="role">Full Stack Developer - MERN</p>
-          <a href="/Akshaya_Resume.pdf" download className="download-btn">
+         <a
+  href={`${process.env.PUBLIC_URL}/Akshaya_Resume.pdf`}
+  download
+  className="download-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
   <FaDownload className="download-icon" />
   Download CV
 </a>
+
         </div>
       </div>
     </section>
