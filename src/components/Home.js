@@ -1,4 +1,4 @@
-// Home.js
+.// Home.js
 import React from 'react';
 import './Home.css';
 import { FaDownload } from 'react-icons/fa';
