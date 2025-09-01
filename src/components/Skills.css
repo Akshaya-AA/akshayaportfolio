@@ -31,6 +31,7 @@
   text-align: left;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  margin: 0 auto;  /* force card center always */
 }
 
 .skills-card:hover {
@@ -72,6 +73,8 @@
   .skills-card {
     width: 90%;
     max-width: 400px;
+    margin: 15px auto;  /* center horizontally */
+    display: block;
   }
 }
 
@@ -90,5 +93,11 @@
 
   .skills-list li {
     font-size: 0.95rem;
+  }
+
+  .skills-card {
+    width: 95%;
+    margin: 10px auto;
+    display: block;
   }
 }
