@@ -39,10 +39,12 @@ const Contact = () => {
           <input type="hidden" name="time" value={new Date().toLocaleString()} />
           <button type="submit">Send Message</button>
         </form>
-        {process.env.REACT_APP_SHOW_PHONE === "true" && (
-  <a href={`tel:${process.env.REACT_APP_PHONE}`} className="call-button">Call Me</a>
-)}
 
+        {process.env.REACT_APP_SHOW_PHONE === "true" && (
+          <a href={`tel:${process.env.REACT_APP_PHONE}`} className="call-button">
+            Call Me
+          </a>
+        )}
       </div>
     </section>
   );
