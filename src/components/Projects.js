@@ -1,4 +1,4 @@
-// Projects.js
+
 import React from 'react';
 import './Projects.css';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
