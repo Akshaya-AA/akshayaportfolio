@@ -1,4 +1,4 @@
-.import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa'; // for hamburger
